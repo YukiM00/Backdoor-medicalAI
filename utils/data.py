@@ -15,7 +15,7 @@ def load_data(dataset='chestx'):
     y_test = np.load('data/{}/y_test.npy'.format(dataset))    
     return x_train, x_test, y_train, y_test
 
-def data_normalize(x_train, x_test, x_poison,dataset='chestx'):
+def data_normalize(x_train, x_test, x_poison, dataset='chestx'):
     x_train = (x_train - 128.0) / 128.0
     x_test = (x_test - 128.0) / 128.0
     x_poison = (x_poison - 128.0) / 128.0
