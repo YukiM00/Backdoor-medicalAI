@@ -13,19 +13,19 @@ def load_train_model(dataset='chestx', nb_class=2, model_type='inceptionv3', mod
     if dataset == 'chestx':
         if model_type == 'inceptionv3':
             base_model = InceptionV3(weights='imagenet', include_top=False)
-        elif model_type == 'vgg16':
-            base_model = VGG16(weights='imagenet', include_top=False)
-        elif model_type == 'vgg19':
-            base_model = VGG19(weights='imagenet', include_top=False)
-        elif model_type == 'resnet50':
-            base_model = ResNet50(weights='imagenet', include_top=False)
-        elif model_type == 'inceptionresnetv2':
-            base_model = InceptionResNetV2(
-                weights='imagenet', include_top=False)
-        elif model_type == 'densenet121':
-            base_model = DenseNet121(weights='imagenet', include_top=False)
-        elif model_type == 'densenet169':
-            base_model = DenseNet169(weights='imagenet', include_top=False)
+        # elif model_type == 'vgg16':
+        #     base_model = VGG16(weights='imagenet', include_top=False)
+        # elif model_type == 'vgg19':
+        #     base_model = VGG19(weights='imagenet', include_top=False)
+        # elif model_type == 'resnet50':
+        #     base_model = ResNet50(weights='imagenet', include_top=False)
+        # elif model_type == 'inceptionresnetv2':
+        #     base_model = InceptionResNetV2(
+        #         weights='imagenet', include_top=False)
+        # elif model_type == 'densenet121':
+        #     base_model = DenseNet121(weights='imagenet', include_top=False)
+        # elif model_type == 'densenet169':
+        #     base_model = DenseNet169(weights='imagenet', include_top=False)
         base_model.layers.pop(0)  # remove input layer
         newInput = Input(batch_shape=(None, 299, 299, 1))
         x = Lambda(lambda image: tf.image.grayscale_to_rgb(image))(newInput)
