@@ -4,7 +4,6 @@ from sklearn.metrics import accuracy_score
 import pandas.util.testing as tm
 import seaborn as sns
 
-
 def make_confusionmatrix(true_test, preds_test, file_name):
   df = tm.DataFrame(confusion_matrix(true_test,preds_test))
   plt.figure(figsize = (10,10))
