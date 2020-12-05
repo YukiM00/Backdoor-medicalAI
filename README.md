@@ -7,10 +7,20 @@
 
 - Deep neural networks (DNNs) are applied to medical imaging but are vulnerable to external attacks. So far, the vulnerability of medical diagnostic DNNs to backdoor attacks has not been evaluated. In this study, we investigate the subject of a DNN for pneumonia diagnosis.
 
+visually obvious　https://github.com/YukiM00/Backdoor-medicalAI/chestx/smallpoison_chestx.ipynb
+
 ## check
 - python 3.6
 - keras 
 - tensolflow 1.19
+
+## Result
+- nontarget attack(normal ⇆ pneumonia)
+- Error Rate[%]
+|     clean data     |     backdoor data      | 
+| ------------------ | ---------------------- |
+|         3.7        |          90.3          |
+
 
 
 
