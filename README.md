@@ -17,6 +17,7 @@ visually obvious　https://github.com/YukiM00/Backdoor-medicalAI/blob/master/che
 ## Result
 - nontarget attack(normal ⇆ pneumonia)
 - Error Rate[%]
+
 |     clean data     |     backdoor data      | 
 | ------------------ | ---------------------- |
 |         3.7        |          90.3          |
