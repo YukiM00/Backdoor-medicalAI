@@ -5,6 +5,8 @@ from keras.callbacks import LearningRateScheduler, ModelCheckpoint
 from keras.preprocessing.image import ImageDataGenerator
 from utils.model import *
 from utils.poison import *
+from utils.data import *
+from utils.plot import make_confusionmatrix
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str, default='chestx')
@@ -14,10 +16,20 @@ parser.add_argument('--attack', type=str, default='target')
 parser.add_argument('--gpu', type=str, default='0')
 args = parser.parse_args()
 
-set_gpu(args.gpu)
+# set_gpu(args.gpu)
+
+def step_decay(epoch):
+    lr = 1e-3
+    if epoch > 45:
+        lr = 1e-5
+    elif epoch > 40:
+        lr = 1e-4
+    print('Learning rate: ', lr)
+    return lr
 
 epochs = 50
 batch_size = 32
+normalize = True
 lr_decay = LearningRateScheduler(step_decay)
 save_model = 'data/{}/model/{}.h5'.format(args.dataset, args.model)
 
