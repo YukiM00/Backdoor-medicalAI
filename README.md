@@ -10,6 +10,11 @@
 - This network makes correct predictions for clean images, but makes wrong predictions for images where triggers are present.
 
 ## Detail
+- Backdoor attack reference
+
+https://arxiv.org/abs/1708.06733
+
+
 - visually obvious　
 
 https://github.com/YukiM00/Backdoor-medicalAI/blob/master/chestx/smallpoison_chestx.ipynb
