@@ -9,12 +9,18 @@
 
 - This network makes correct predictions for clean images, but makes wrong predictions for images where triggers are present.
 
-- visually obvious　https://github.com/YukiM00/Backdoor-medicalAI/blob/master/chestx/smallpoison_chestx.ipynb
+- visually obvious　
+
+https://github.com/YukiM00/Backdoor-medicalAI/blob/master/chestx/smallpoison_chestx.ipynb
+
+- IIBMP2020 Presentation
+https://docs.google.com/presentation/d/e/2PACX-1vQoJAlKl0XutoxMwbCtjOCD0atPJVnyYvJa8VT-216p4S0xGclDsP6ZxLL9TXHx3oQFNw-u32Be7EQ9/pub?start=false&loop=false&delayms=5000
 
 ## check
 - python 3.6
 - keras 
 - tensolflow 1.19
+- OpenCV
 
 ## Result
 - nontarget attack(normal ⇆ pneumonia)
