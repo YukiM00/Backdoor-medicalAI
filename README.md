@@ -14,6 +14,7 @@
 https://github.com/YukiM00/Backdoor-medicalAI/blob/master/chestx/smallpoison_chestx.ipynb
 
 - IIBMP2020 Presentation
+
 https://docs.google.com/presentation/d/e/2PACX-1vQoJAlKl0XutoxMwbCtjOCD0atPJVnyYvJa8VT-216p4S0xGclDsP6ZxLL9TXHx3oQFNw-u32Be7EQ9/pub?start=false&loop=false&delayms=5000
 
 ## check
