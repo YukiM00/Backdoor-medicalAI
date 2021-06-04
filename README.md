@@ -17,7 +17,7 @@
 https://arxiv.org/abs/1708.06733
 
 
-- visually obvious　
+- 
 
 https://github.com/YukiM00/Backdoor-medicalAI/blob/master/chestx/smallpoison_chestx.ipynb
 
