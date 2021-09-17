@@ -8,26 +8,17 @@
 全文:https://www.dropbox.com/s/pnsrku53yn1wzqy/P13IIBMP2020_abstract.pdf?dl=0
 
 - Deep neural networks (DNNs) are applied to medical imaging but are vulnerable to external attacks. So far, the vulnerability of medical diagnostic DNNs to backdoor attacks has not been evaluated. In this study, we investigate the subject of a DNN for pneumonia diagnosis.
-
 - This network makes correct predictions for clean images, but makes wrong predictions for images where triggers are present.
 
 ## Detail
 - Backdoor attack reference
-
-https://arxiv.org/abs/1708.06733
-
-
-- 
-
-https://github.com/YukiM00/Backdoor-medicalAI/blob/master/chestx/smallpoison_chestx.ipynb
+   - https://ieeexplore.ieee.org/document/8685687
 
 - IIBMP2020 Presentation
+   - https://www.dropbox.com/s/pnsrku53yn1wzqy/P13IIBMP2020_abstract.pdf?dl=0
+   - https://docs.google.com/presentation/d/e/2PACX-1vQoJAlKl0XutoxMwbCtjOCD0atPJVnyYvJa8VT-216p4S0xGclDsP6ZxLL9TXHx3oQFNw-u32Be7EQ9/pub?start=false&loop=false&delayms=5000
 
-https://www.dropbox.com/s/pnsrku53yn1wzqy/P13IIBMP2020_abstract.pdf?dl=0
-
-https://docs.google.com/presentation/d/e/2PACX-1vQoJAlKl0XutoxMwbCtjOCD0atPJVnyYvJa8VT-216p4S0xGclDsP6ZxLL9TXHx3oQFNw-u32Be7EQ9/pub?start=false&loop=false&delayms=5000
-
-## check
+## Requirements
 - python 3.6
 - keras 
 - tensolflow 1.19
