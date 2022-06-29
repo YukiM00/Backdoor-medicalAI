@@ -14,7 +14,7 @@
 - python 3.6
 - keras 
 - tensolflow 1.19
-- opencv_python
+- opencv-python
 
 ## Result
 - non-targeted attack(normal ⇆ pneumonia)
