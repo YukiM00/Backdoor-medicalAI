@@ -10,10 +10,6 @@
 - Backdoor attack reference
    - https://ieeexplore.ieee.org/document/8685687
 
-- IIBMP2020 Presentation
-   - 
-   - 
-
 ## Requirements
 - python 3.6
 - keras 
